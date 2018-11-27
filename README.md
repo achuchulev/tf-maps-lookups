@@ -1,6 +1,6 @@
 # Use of Terraform map variables and dynamic lookup into them
 
-### The purpose of this repo is to show how to use variables of type _map_ and how to dynamically reference them with lookup to build separate Dev and Prod Docker environments using Terraform Workspaces
+### The purpose of this repo is to show how to use variables of type map and how to dynamically reference them with lookup to build separate Dev and Prod Docker environments using Terraform Workspaces
 
 ### Prerequisites
 
@@ -87,4 +87,11 @@ terraform destroy # type _prod_ when asked, to specify which environment you are
 
 ### Lab
 
-In order to destroy lab exit vagrant box and from repo root folder run `vagrant destroy` confirming `yes` once prompted
+Leave vagrant box ssh, and run
+
+```
+cd tf-maps-lookups
+vagrant destroy
+``` 
+
+confirming `yes` once prompted
