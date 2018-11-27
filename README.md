@@ -72,3 +72,14 @@ terraform apply
 terraform destroy
 ```
  
+## How to test 
+
+In order to test that either Dev or Prod is working fine open your browser and:
+
+### For Dev
+
+[click here](192.168.0.10:8080)
+
+### For Prod
+
+[click here](192.168.0.10:80)
