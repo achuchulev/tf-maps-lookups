@@ -10,14 +10,14 @@
 
 ## How to build
 
-### Get the repo
+#### Get the repo
 
 ```
 git clone https://github.com/achuchulev/tf-maps-lookups.git
 cd tf-maps-lookups
 ```
 
-### Start lab
+#### Start lab
 
 Run vagrant box with command:
 
@@ -31,7 +31,7 @@ Above command will run `script/provision.sh` that will install:
 - Terraform
 - Git
 
-### SSH to vagrant box and browse repo files
+#### ssh to vagrant box and browse repo files
 
 ```
 vagrant ssh
@@ -39,11 +39,11 @@ sudo su -
 cd /vagrant
 ```
 
-### Initialize terraform
+#### Initialize terraform
 
 `terraform init`
 
-### Specify which environment to work with
+#### Specify which environment to work with
 
 In order to specify which environment you want terraform to deploy/manage/destroy export _env_ variable with command:
 
@@ -54,7 +54,7 @@ In order to specify which environment you want terraform to deploy/manage/destro
 P.S.
 You can also specify which environment to work with interactively through console instead of using environment variables
 
-### Build environment
+#### Build environment
 
 Once you have specified which environment you are going to work with, run:
 
@@ -63,7 +63,7 @@ terraform plan
 terraform apply
 ```
 
-### Destroy environment
+#### Destroy environment
 
 ```
 terraform destroy
