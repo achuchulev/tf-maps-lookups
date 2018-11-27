@@ -1,4 +1,3 @@
-
 variable "image" {}
 variable "name" {}
 variable "int_port" {}
