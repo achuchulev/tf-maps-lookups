@@ -24,7 +24,7 @@ Vagrant up will run `script/provision.sh` that will install:
 
 ## How to build
 
-### ssh to vagrant box and browse repo files
+### ssh to vagrant box and go to repo folder
 
 ```
 vagrant ssh
@@ -36,7 +36,7 @@ cd /vagrant
 
 `terraform init`
 
-### Create new Terraform workspace for Dev and Prod
+### Create new Terraform workspaces for Dev and Prod
 
 ```
 terraform workspace new dev
