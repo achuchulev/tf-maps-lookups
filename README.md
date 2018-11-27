@@ -16,7 +16,7 @@ cd tf-maps-lookups
 vagrant up
 ```
 
-Vagrant up will run `script/provision.sh` that will install:
+Vagrant up will run `scripts/provision.sh` that will install:
 
 - Docker
 - Terraform
