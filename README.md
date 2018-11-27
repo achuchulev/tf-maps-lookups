@@ -10,14 +10,14 @@
 
 ## How to build
 
-### Get the repo
+#### Get the repo
 
 ```
 git clone https://github.com/achuchulev/tf-maps-lookups.git
 cd tf-maps-lookups
 ```
 
-### Run lab
+#### Run lab
 
 Run vagrant box with command:
 
@@ -31,7 +31,7 @@ Above command will run `script/provision.sh` that will install:
 - Terraform
 - Git
 
-### ssh to vagrant box and browse repo files
+#### ssh to vagrant box and browse repo files
 
 ```
 vagrant ssh
@@ -39,43 +39,43 @@ sudo su -
 cd /vagrant
 ```
 
-### Initialize terraform
+#### Initialize terraform
 
 `terraform init`
 
-### Create new Terraform workspace for Dev and Prod
+#### Create new Terraform workspace for Dev and Prod
 
 ```
 terraform workspace new dev
 terraform workspace new prod
 ```
 
-### Build environment
+#### Build environment
 
-#### Dev
+##### Dev
 
 ```
 terraform workspace select dev
 terraform apply # type _dev_ when asked, to specify which environment you are going to deploy
 ```
 
-#### Prod
+##### Prod
 
 ```
 terraform workspace select prod
 terraform apply # type _prod_ when asked, to specify which environment you are going to deploy
 ```
 
-### Destroy environment
+#### Destroy environment
 
-#### Dev
+##### Dev
 
 ```
 terraform workspace select dev
 terraform destroy # type _dev_ when asked, to specify which environment you are going to destroy
 ```
 
-#### Prod
+##### Prod
 
 ```
 terraform workspace select prod
