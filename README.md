@@ -8,30 +8,23 @@
 * Git
 * VirtualBox
 
-## How to build
-
-#### Get the repo
+### Get the repo and run lab
 
 ```
 git clone https://github.com/achuchulev/tf-maps-lookups.git
 cd tf-maps-lookups
-```
-
-#### Run lab
-
-Run vagrant box with command:
-
-```
 vagrant up
 ```
 
-Above command will run `script/provision.sh` that will install:
+Vagrant up will run `script/provision.sh` that will install:
 
 - Docker
 - Terraform
 - Git
 
-#### ssh to vagrant box and browse repo files
+## How to build
+
+### ssh to vagrant box and browse repo files
 
 ```
 vagrant ssh
@@ -39,53 +32,56 @@ sudo su -
 cd /vagrant
 ```
 
-#### Initialize terraform
+### Initialize terraform
 
 `terraform init`
 
-#### Create new Terraform workspace for Dev and Prod
+### Create new Terraform workspace for Dev and Prod
 
 ```
 terraform workspace new dev
 terraform workspace new prod
 ```
 
-#### Build environment
-
-##### Dev
+### Build Dev
 
 ```
 terraform workspace select dev
 terraform apply # type _dev_ when asked, to specify which environment you are going to deploy
 ```
 
-##### Prod
+### Build Prod
 
 ```
 terraform workspace select prod
 terraform apply # type _prod_ when asked, to specify which environment you are going to deploy
 ```
 
-#### Destroy environment
+## How to test 
 
-##### Dev
+In order to test that either Dev or Prod is working fine open the links below in new browser tab.
+
+[*To test Dev*](http://192.168.0.10:8080)
+
+[*To test Prod*](http://192.168.0.10:80)
+
+
+## How to destroy
+
+### Destroy Dev
 
 ```
 terraform workspace select dev
 terraform destroy # type _dev_ when asked, to specify which environment you are going to destroy
 ```
 
-##### Prod
+### Destroy Prod
 
 ```
 terraform workspace select prod
 terraform destroy # type _prod_ when asked, to specify which environment you are going to destroy
 ```
- 
-## How to test 
 
-In order to test that either Dev or Prod is working fine open below link in new browser tab.
+### Destroy lab
 
-[*To test Dev*](http://192.168.0.10:8080)
-
-[*To test Prod*](http://192.168.0.10:80)
+In order to destroy lab exit vagrant box and from repo root folder run `vagrant destroy` confirming `yes` once prompted
