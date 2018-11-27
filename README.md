@@ -1,6 +1,6 @@
-# Use of terraform map variables and dynamic lookup into them
+# Use of Terraform map variables and dynamic lookup into them
 
-### The purpose of this repo is to show how to use variables of type _map_ and how to dynamically reference them with lookup to build Dev and Prod Docker container environments
+### The purpose of this repo is to show how to use variables of type _map_ and how to dynamically reference them with lookup to build Dev and Prod Docker container environments using Terraform Workspaces
 
 ### Prerequisites
 
@@ -10,14 +10,14 @@
 
 ## How to build
 
-#### Get the repo
+### Get the repo
 
 ```
 git clone https://github.com/achuchulev/tf-maps-lookups.git
 cd tf-maps-lookups
 ```
 
-#### Start lab
+### Run lab
 
 Run vagrant box with command:
 
@@ -31,7 +31,7 @@ Above command will run `script/provision.sh` that will install:
 - Terraform
 - Git
 
-#### ssh to vagrant box and browse repo files
+### ssh to vagrant box and browse repo files
 
 ```
 vagrant ssh
@@ -39,34 +39,47 @@ sudo su -
 cd /vagrant
 ```
 
-#### Initialize terraform
+### Initialize terraform
 
 `terraform init`
 
-#### Specify which environment to work with
-
-In order to specify which environment you want terraform to deploy/manage/destroy export _env_ variable with command:
-
-- for Dev, run command `export TF_VAR_env=dev`
-- for Prod, run command `export TF_VAR_env=prod`
-- to unset currently exported Env Var, run command `unset TF_VAR_env`
-
-P.S.
-You can also specify which environment to work with interactively through console instead of using environment variables
-
-#### Build environment
-
-Once you have specified which environment you are going to work with, run:
+### Create new Terraform workspace for Dev and Prod
 
 ```
-terraform plan
-terraform apply
+terraform workspace new dev
+terraform workspace new prod
 ```
 
-#### Destroy environment
+### Build environment
+
+#### Dev
 
 ```
-terraform destroy
+terraform workspace select dev
+terraform apply # type _dev_ when asked, to specify which environment you are going to deploy
+```
+
+#### Prod
+
+```
+terraform workspace select prod
+terraform apply # type _prod_ when asked, to specify which environment you are going to deploy
+```
+
+### Destroy environment
+
+#### Dev
+
+```
+terraform workspace select dev
+terraform destroy # type _dev_ when asked, to specify which environment you are going to destroy
+```
+
+#### Prod
+
+```
+terraform workspace select prod
+terraform destroy # type _prod_ when asked, to specify which environment you are going to destroy
 ```
  
 ## How to test 
