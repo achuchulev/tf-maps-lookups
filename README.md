@@ -49,15 +49,18 @@ terraform workspace new prod
 
 ```
 terraform workspace select dev
-terraform apply # type _dev_ when asked, to specify which environment you are going to deploy
+terraform apply
 ```
+
+typing _dev_ when asked, to specify which environment you are going to deploy
 
 #### Prod
 
 ```
 terraform workspace select prod
-terraform apply # type _prod_ when asked, to specify which environment you are going to deploy
+terraform apply
 ```
+typing _prod_ when asked, to specify which environment you are going to deploy
 
 ## How to test 
 
@@ -75,15 +78,19 @@ In order to test that either Dev or Prod is working fine open the links below in
 
 ```
 terraform workspace select dev
-terraform destroy # type _dev_ when asked, to specify which environment you are going to destroy
+terraform destroy
 ```
+
+typing _dev_ when asked, to specify which environment you are going to destroy
 
 ### Prod
 
 ```
 terraform workspace select prod
-terraform destroy # type _prod_ when asked, to specify which environment you are going to destroy
+terraform destroy
 ```
+
+typing _prod_ when asked, to specify which environment you are going to destroy
 
 ### Lab
 
