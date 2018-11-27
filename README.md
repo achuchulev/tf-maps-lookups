@@ -1,4 +1,4 @@
-# Use of terraform _map_ variables and dynamic _lookup_ into them
+# Use of terraform map variables and dynamic lookup into them
 
 ### The purpose of this repo is to show how to use variables of type _map_ to build Dev and Prod Docker container environments
 
@@ -30,9 +30,6 @@ Above command will run `script/provision.sh` that will install:
 - Docker
 - Terraform
 - Git
-
-
-## How to use
 
 ### SSH to vagrant box and browse repo files
 
