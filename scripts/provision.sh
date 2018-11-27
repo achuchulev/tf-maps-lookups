@@ -18,8 +18,3 @@ which terraform &>/dev/null || {
   sudo unzip terraform_0.11.10_linux_amd64.zip
   popd
 }
-
-# install git
-which git &>/dev/null || {
-  sudo apt-get install -y git
-}
