@@ -74,7 +74,7 @@ terraform destroy
  
 ## How to test 
 
-In order to test that either Dev or Prod is working fine open your browser and:
+In order to test that either Dev or Prod is working fine open below link in new browser tab.
 
 ### For Dev
 
