@@ -76,10 +76,6 @@ terraform destroy
 
 In order to test that either Dev or Prod is working fine open below link in new browser tab.
 
-### For Dev
+[*To test Dev*](http://192.168.0.10:8080)
 
-[test dev](http://192.168.0.10:8080)
-
-### For Prod
-
-[test prod](http://192.168.0.10:80)
+[*To test Prod*](http://192.168.0.10:80)
