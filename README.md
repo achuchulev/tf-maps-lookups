@@ -20,7 +20,7 @@ Vagrant up will run `scripts/provision.sh` that will install:
 
 - Docker
 - Terraform
-- Git
+
 
 ## How to build
 
@@ -66,6 +66,7 @@ In order to test that either Dev or Prod is working fine open the links below in
 [*To test Dev*](http://192.168.0.10:8080)
 
 [*To test Prod*](http://192.168.0.10:80)
+
 
 
 ## How to destroy
