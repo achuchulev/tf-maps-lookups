@@ -25,12 +25,11 @@ Run vagrant box with command:
 vagrant up
 ```
 
-Above command will run `script/provision.sh` that will:
+Above command will run `script/provision.sh` that will install:
 
-- Download a Virtualbox image from Vagrant cloud
-- Run the vagrant box on virtualbox locally
-- Install docker community edition
-- Install terraform
+- Docker
+- Terraform
+- Git
 
 
 ## How to use
