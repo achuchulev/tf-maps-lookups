@@ -1,6 +1,6 @@
-# Use of terraform variables of type _map_ and dynamic lookup into map variable
+# Use of terraform variables of type _map_ and dynamic _lookup_ into them
 
-## The purpose of this repo is to show how to use variables of type _map_ within terraform configuration to build Dev and Prod environments that have different docker container setup
+### The purpose of this repo is to show how to use variables of type _map_ to build Dev and Prod Docker container environments
 
 ### Prerequisites
 
