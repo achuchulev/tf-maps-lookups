@@ -25,7 +25,7 @@ Run vagrant box with command:
 vagrant up
 ```
 
-It will:
+Above command will run `script/provision.sh` that will:
 
 - Download a Virtualbox image from Vagrant cloud
 - Run the vagrant box on virtualbox locally
