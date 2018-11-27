@@ -43,14 +43,16 @@ terraform workspace new dev
 terraform workspace new prod
 ```
 
-### Build Dev
+### Build 
+
+#### Dev
 
 ```
 terraform workspace select dev
 terraform apply # type _dev_ when asked, to specify which environment you are going to deploy
 ```
 
-### Build Prod
+#### Prod
 
 ```
 terraform workspace select prod
@@ -68,20 +70,22 @@ In order to test that either Dev or Prod is working fine open the links below in
 
 ## How to destroy
 
-### Destroy Dev
+### Destroy 
+
+#### Dev
 
 ```
 terraform workspace select dev
 terraform destroy # type _dev_ when asked, to specify which environment you are going to destroy
 ```
 
-### Destroy Prod
+#### Prod
 
 ```
 terraform workspace select prod
 terraform destroy # type _prod_ when asked, to specify which environment you are going to destroy
 ```
 
-### Destroy lab
+#### Lab
 
 In order to destroy lab exit vagrant box and from repo root folder run `vagrant destroy` confirming `yes` once prompted
