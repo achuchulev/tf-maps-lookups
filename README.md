@@ -78,8 +78,8 @@ In order to test that either Dev or Prod is working fine open your browser and:
 
 ### For Dev
 
-[click here](192.168.0.10:8080)
+[test dev](http://192.168.0.10:8080)
 
 ### For Prod
 
-[click here](192.168.0.10:80)
+[test prod](http://192.168.0.10:80)
