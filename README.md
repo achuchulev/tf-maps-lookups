@@ -64,11 +64,11 @@ typing _prod_ when asked, to specify which environment you are going to deploy
 
 ## How to test 
 
-In order to test that either Dev or Prod is working fine open the links below in new browser tab.
+Open the links below in new browser tab to test:
 
-[*To test Dev*](http://192.168.0.10:8080)
+[*Dev*](http://192.168.0.10:8080)
 
-[*To test Prod*](http://192.168.0.10:80)
+[*Prod*](http://192.168.0.10:80)
 
 
 
